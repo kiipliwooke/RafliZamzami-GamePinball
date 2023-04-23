@@ -139,6 +139,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1353380602}
     - target: {fileID: 1576734336770511752, guid: 2053073f27d6be141932867b1859ccee, type: 3}
+      propertyPath: multiplier
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1576734336770511752, guid: 2053073f27d6be141932867b1859ccee, type: 3}
       propertyPath: audioManager
       value: 
       objectReference: {fileID: 1991143568}
@@ -1147,7 +1151,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6ac79d55b10b4a4798948a8aa837d1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vfxSource: {fileID: 7494856342414125256, guid: e1cd16a074efc8741aaf07516a3a08a1, type: 3}
+  bumperVFX: {fileID: 7494856342414125256, guid: e1cd16a074efc8741aaf07516a3a08a1, type: 3}
+  switchVFX: {fileID: 5862845150619005463, guid: 88ec148fc32dd824588a3968e8b6c866, type: 3}
 --- !u!4 &1353380603
 Transform:
   m_ObjectHideFlags: 0
@@ -1294,6 +1299,14 @@ PrefabInstance:
       propertyPath: bola
       value: 
       objectReference: {fileID: 841605445}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: vfxManager
+      value: 
+      objectReference: {fileID: 1353380602}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1991143568}
     - target: {fileID: 6857529311050879042, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1472,6 +1485,14 @@ PrefabInstance:
       propertyPath: bola
       value: 
       objectReference: {fileID: 841605445}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: vfxManager
+      value: 
+      objectReference: {fileID: 1353380602}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1991143568}
     - target: {fileID: 6857529311050879042, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -1548,7 +1569,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bgmAudioSource: {fileID: 1200107325}
-  sfxAudioSource: {fileID: 855922047015242140, guid: 3d7d451e0cfabe64fb872f5726c2ba0c, type: 3}
+  bumperSFX: {fileID: 855922047015242140, guid: 3d7d451e0cfabe64fb872f5726c2ba0c, type: 3}
+  planeSFX: {fileID: 8665600740621634862, guid: 6364b43dc481fb24284791f193c9acbc, type: 3}
 --- !u!4 &1991143569
 Transform:
   m_ObjectHideFlags: 0
@@ -1774,6 +1796,14 @@ PrefabInstance:
       propertyPath: bola
       value: 
       objectReference: {fileID: 841605445}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: vfxManager
+      value: 
+      objectReference: {fileID: 1353380602}
+    - target: {fileID: 6345601161617819527, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1991143568}
     - target: {fileID: 6857529311050879042, guid: ee4833c5cde39be47bb73ca85b10b4c1, type: 3}
       propertyPath: m_RootOrder
       value: 9
