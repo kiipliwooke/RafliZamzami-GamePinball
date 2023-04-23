@@ -12,6 +12,8 @@ public class SwitchController : MonoBehaviour
     }
 
     public Collider bola;
+    public AudioManager audioManager;
+    public VFXManager vfxManager;
     public Material offMaterial;
     public Material onMaterial;
 
@@ -30,6 +32,8 @@ public class SwitchController : MonoBehaviour
     {
         if(other == bola)
         {
+            audioManager.PlayPlaneSFX(gameObject.transform.position);
+            vfxManager.PlayPlaneVFX(gameObject.transform.position);
             Toggle();
         }
     }
