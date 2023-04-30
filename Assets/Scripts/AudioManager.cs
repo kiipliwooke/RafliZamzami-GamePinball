@@ -6,8 +6,9 @@ public class AudioManager : MonoBehaviour
 {
 	public AudioSource bgmAudioSource;
 	public GameObject bumperSFX;
-	public GameObject planeSFX;
-	
+	public GameObject planeOnSFX;
+	public GameObject planeOffSFX;
+
 	private void Start()
 	{
 		PlayBGM();
@@ -21,8 +22,13 @@ public class AudioManager : MonoBehaviour
 		GameObject.Instantiate(bumperSFX, spawnPosition, Quaternion.identity);
 	}
 
-	public void PlayPlaneSFX(Vector3 spawnPosition)
+	public void PlayPlaneOnSFX(Vector3 spawnPosition)
     {
-		GameObject.Instantiate(planeSFX, spawnPosition, Quaternion.identity);
+		GameObject.Instantiate(planeOnSFX, spawnPosition, Quaternion.identity);
     }
+
+	public void PlayPlaneOffSFX(Vector3 spawnPosition)
+	{
+		GameObject.Instantiate(planeOffSFX, spawnPosition, Quaternion.identity);
+	}
 }

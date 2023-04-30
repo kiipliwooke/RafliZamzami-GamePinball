@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8302383945892307413}
   - component: {fileID: 4801301093316895598}
   - component: {fileID: 2509541652872232144}
+  - component: {fileID: -8788944176716899733}
   m_Layer: 0
   m_Name: SwitchVFX
   m_TagString: Untagged
@@ -4870,3 +4871,15 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &-8788944176716899733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5862845150619005463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5707ad7071b7ee449b269b9a207938e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

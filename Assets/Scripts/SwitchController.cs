@@ -16,6 +16,8 @@ public class SwitchController : MonoBehaviour
     public VFXManager vfxManager;
     public Material offMaterial;
     public Material onMaterial;
+    public ScoreManager scoreManager;
+    public float score;
 
     private SwitchState state;
     private Renderer renderer;
@@ -32,7 +34,6 @@ public class SwitchController : MonoBehaviour
     {
         if(other == bola)
         {
-            audioManager.PlayPlaneSFX(gameObject.transform.position);
             vfxManager.PlayPlaneVFX(gameObject.transform.position);
             Toggle();
         }
@@ -73,12 +74,15 @@ public class SwitchController : MonoBehaviour
 
     private void Toggle()
     {
+        scoreManager.AddScore(score);
         if (state == SwitchState.On)
         {
+            audioManager.PlayPlaneOnSFX(gameObject.transform.position);
             Set(false);
         }
         else
         {
+            audioManager.PlayPlaneOffSFX(gameObject.transform.position);
             Set(true);
         }
     }
